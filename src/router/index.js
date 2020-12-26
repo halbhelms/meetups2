@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import MeetupList from '../views/MeetupList.vue'
+import MeetupList from '../views/MeetupList'
 import AddMeetup from '../views/AddMeetup'
 import EditMeetup from '../views/EditMeetup'
 

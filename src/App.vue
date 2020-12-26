@@ -1,9 +1,20 @@
 <template>
   <div id="nav">
+    <h3><router-link to="{name: MeetupList}">All Meetups</router-link></h3>
     <h3><router-link to="{name: AddMeetup}">Add Meetup</router-link></h3>
   </div>
   <router-view/>
 </template>
+
+<script>
+
+export default {
+
+  created() {
+    this.$store.dispatch('getAllMeetups')
+  }
+}
+</script>
 
 <style>
 #app {

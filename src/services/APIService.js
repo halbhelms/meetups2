@@ -15,7 +15,7 @@ export default {
     },
 
     allMeetups: function() {
-
+        return axios.get(BASE_URL + 'meetups/')
     },
 
     meetupById: function(meetupId) {

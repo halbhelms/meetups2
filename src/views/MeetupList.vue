@@ -1,5 +1,6 @@
 <template>
     <h1 class="view">Meetups</h1>
+    <MeetupCard v-for="meetup in $store.state.meetups" :meetup="meetup" :key="meetup.id" />
 </template>
 
 <script>
@@ -22,6 +23,7 @@ export default {
 
     // Lifecycle vvv
 
+    
 
 }
 </script>

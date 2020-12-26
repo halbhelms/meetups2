@@ -1,5 +1,5 @@
 import { createStore } from 'vuex'
-// TODO import the API service
+import API from '../services/APIService'
 // TODO add mutations
 // TODO add actions
 export default createStore({
@@ -19,8 +19,16 @@ export default createStore({
     ]
   },
   mutations: {
+    POPULATE_MEETUPS(state, meetups) {
+      state.meetups = meetups
+    }
   },
   actions: {
+    getAllMeetups({ commit }) {
+      API.allMeetups()
+        .then(response => commit('POPULATE_MEETUPS', response.data))
+        .catch( error => console.log('error', error))
+    }
   },
   modules: {
   }

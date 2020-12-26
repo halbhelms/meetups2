@@ -1,14 +1,14 @@
 <template>
   <div class="card">
       <div>
-        <h2 class="card-title"><span>Title</span><span><router-link to="{name: 'EditMeetup'}">Edit</router-link></span><span @click="deleteMeetup">Delete</span></h2>
-        <p>Created by: A user</p>
+        <h2 class="card-title"><span>{{ meetup.title }}</span><span><router-link to="{name: 'EditMeetup'}">Edit</router-link></span><span @click="deleteMeetup">Delete</span></h2>
+        <p>Created by: {{ meetup.createdBy }}</p>
       </div>
 
       <div>
-          <div>Description:</div><div>A description</div>
-          <div>Date:</div><div>A date</div>
-          <div>Location:</div><div>A location</div>
+          <div>Description:</div><div>{{ meetup.description }}</div>
+          <div>Date:</div><div>{{ meetup.date }}</div>
+          <div>Location:</div><div>{{ meetup.location }}</div>
       </div>
 
   </div>

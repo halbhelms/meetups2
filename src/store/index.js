@@ -1,5 +1,7 @@
 import { createStore } from 'vuex'
-
+// TODO import the API service
+// TODO add mutations
+// TODO add actions
 export default createStore({
   state: {
     meetups: [],

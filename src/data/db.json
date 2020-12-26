@@ -1,0 +1,44 @@
+{
+    "meetups": [
+        {
+            "id": 1,
+            "title": "M0106",
+            "description": "",
+            "createdBy": "",
+            "dateCreated": "",
+            "location": ""
+        },
+        {
+            "id": 2,
+            "title": "M0106a",
+            "description": "",
+            "createdBy": "",
+            "dateCreated": "",
+            "location": ""
+        },
+        {
+            "id": 3,
+            "title": "M0106b",
+            "description": "",
+            "createdBy": "",
+            "dateCreated": "",
+            "location": ""
+        },
+        {
+            "id": 4,
+            "title": "M0106c",
+            "description": "",
+            "createdBy": "",
+            "dateCreated": "",
+            "location": ""
+        },
+        {
+            "id": 5,
+            "title": "M0106d",
+            "description": "",
+            "createdBy": "",
+            "dateCreated": "",
+            "location": ""
+        }
+    ]
+}

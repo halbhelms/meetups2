@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Meetups from '../views/Meetups.vue'
+import MeetupList from '../views/MeetupList.vue'
 import AddMeetup from '../views/AddMeetup'
-import EditMeetup from '../viewsEditMeetup'
+import EditMeetup from '../views/EditMeetup'
 
 const routes = [
   {
     path: '/',
-    name: 'Meetups',
-    component: Meetups
+    name: 'MeetupList',
+    component: MeetupList
   },
   {
     path: '/add/',

@@ -1,25 +1,45 @@
 <template>
-  
+  <div class="view">
+      <h2>Edit a Meetup</h2>
+      <MeetupForm :_meetup="meetup" @submitted-meetup-form="updateMeetup" />
+  </div>
 </template>
 
 <script>
-export default {
-    name: '',
-    
-    props: [],
+import MeetupForm from '../components/MeetupForm'
 
-    components: {},
+export default {
+    name: 'EditMeetup',
+    
+    props: {},
+
+    components: { MeetupForm },
 
     data() {
-        return {}
+        return {
+          meetup: null
+        }
     },
 
-    methods: {},
+    methods: {
+      updateMeetup(meetup) {
+        this.$store.dispatch('edit_meetup', meetup)
+          .then( () => this.$router.push({name: 'MeetupList'}))
+          .catch( error => console.log('error', error))
+      }
+    },
 
     computed: {},
 
     // Lifecycle vvv
 
+    mounted() {
+        this.$store.dispatch('retrieve_meetup_by_id', this.$route.params.id)
+            .then( response => {
+                this.meetup = response}
+            )
+            .catch( error => console.log('error', error))
+    }
 
 }
 </script>

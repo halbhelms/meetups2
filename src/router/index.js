@@ -10,12 +10,12 @@ const routes = [
     component: MeetupList
   },
   {
-    path: '/add/',
+    path: '/add',
     name: 'AddMeetup',
     component: AddMeetup
   },
   {
-    path: '/edit/:id/',
+    path: '/edit/:id',
     name: 'EditMeetup',
     component: EditMeetup
   }

@@ -1,7 +1,7 @@
 <template>
   <div class="card">
       <div>
-        <h2 class="card-title"><span>{{ meetup.title }}</span><span><router-link to="{name: 'EditMeetup'}">Edit</router-link></span><span @click="deleteMeetup">Delete</span></h2>
+        <h2 class="card-title"><span>{{ meetup.title }}</span><span><router-link :to="{name: 'EditMeetup', params: {id: meetup.id}}">Edit</router-link></span><span @click="deleteMeetup">Delete</span></h2>
         <p>Created by: {{ meetup.createdBy }}</p>
       </div>
 

@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
-    <h3><router-link to="{name: MeetupList}">All Meetups</router-link></h3>
-    <h3><router-link to="{name: AddMeetup}">Add Meetup</router-link></h3>
+    <h3><router-link :to="{name: 'MeetupList'}">All Meetups</router-link></h3>
+    <h3><router-link :to="{name: 'AddMeetup'}">Add Meetup</router-link></h3>
   </div>
   <router-view/>
 </template>
@@ -10,8 +10,8 @@
 
 export default {
 
-  created() {
-    this.$store.dispatch('getAllMeetups')
+  mounted() {
+    this.$store.dispatch('retrieve_all_meetups')
   }
 }
 </script>

@@ -1,49 +1,67 @@
 {
-    "meetups": [
-        {
-            "id": 1,
-            "title": "M0106",
-            "description": "A splendid affair, not to be missed",
-            "createdBy": "Hosey Hoserson",
-            "date": "12.26.2020",
-            "location": "Bellagio Hotel & Casino",
-            "category": "Saving Animals"
-        },
-        {
-            "id": 2,
-            "title": "M0106a",
-            "description": "The largest gala of its type in the Western world",
-            "createdBy": "Johnny B. Good",
-            "date": "1.15.2021",
-            "location": "Houston Arboretum",
-            "category": "Preserving the Environment" 
-        },
-        {
-            "id": 3,
-            "title": "M0106b",
-            "description": "A smallish meeting for those with large hearts and even larger checkbooks",
-            "createdBy": "Shallow Hal",
-            "date": "2.12.2021",
-            "location": "The Venetian",
-            "category": "Feeding the Hungry"
-        },
-        {
-            "id": 4,
-            "title": "M0106c",
-            "description": "Dinner and Dance",
-            "createdBy": "Hosey Hoserson",
-            "date": "3.14.2021",
-            "location": "Hoserson Mansion",
-            "category": "Saving Animals"
-        },
-        {
-            "id": 5,
-            "title": "M0106d",
-            "description": "Celebrity Poker Tournament",
-            "createdBy": "Shallow Hal",
-            "date": "3.26.2021",
-            "location": "Aria Casino",
-            "category": "Helping the Homeless"
-        }
-    ]
+  "meetups": [
+    {
+      "id": 1,
+      "title": "M0106",
+      "description": "A splendid affair, not to be missed",
+      "createdBy": "Hosey Hoserson",
+      "date": "12.26.2020",
+      "location": "Bellagio Hotel & Casino",
+      "category": "Saving Animals"
+    },
+    {
+      "id": 2,
+      "title": "M0106a",
+      "description": "The largest gala of its type in the Western world",
+      "createdBy": "Johnny B. Good",
+      "date": "1.15.2021",
+      "location": "Houston Arboretum",
+      "category": "Preserving the Environment"
+    },
+    {
+      "id": 3,
+      "title": "M0106b",
+      "description": "A smallish meeting for those with large hearts and even larger checkbooks",
+      "createdBy": "Shallow Hal",
+      "date": "2.12.2021",
+      "location": "The Venetian",
+      "category": "Feeding the Hungry"
+    },
+    {
+      "id": 4,
+      "title": "M0106c",
+      "description": "Dinner and Dance",
+      "createdBy": "Hosey Hoserson",
+      "date": "3.14.2021",
+      "location": "Hoserson Mansion",
+      "category": "Saving Animals"
+    },
+    {
+      "id": 5,
+      "title": "M0106d",
+      "description": "Celebrity Poker Tournament",
+      "createdBy": "Shallow Hal",
+      "date": "3.26.2021",
+      "location": "Aria Casino",
+      "category": "Helping the Homeless"
+    },
+    {
+      "title": "M1530",
+      "description": "One of the most anticipated meetups of the year",
+      "createdBy": "Demo Sthenes",
+      "location": "Rockefeller Center",
+      "date": "4.12.2021",
+      "category": "Helping the Homeless",
+      "id": 6
+    },
+    {
+      "title": "M1534",
+      "description": "One of the most anticipated meetups of the year",
+      "createdBy": "Demo Sthenes",
+      "location": "Rockefeller Center",
+      "date": "4.21.2021",
+      "category": "Helping the Homeless",
+      "id": 7
+    }
+  ]
 }

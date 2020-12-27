@@ -2,7 +2,7 @@
   "meetups": [
     {
       "id": 1,
-      "title": "M0106",
+      "title": "Splendid Affair",
       "description": "A splendid affair, not to be missed",
       "createdBy": "Hosey Hoserson",
       "date": "12.26.2020",
@@ -11,16 +11,16 @@
     },
     {
       "id": 2,
-      "title": "M0106a",
+      "title": "Large Gala",
       "description": "The largest gala of its type in the Western world",
-      "createdBy": "Johnny B. Good",
+      "createdBy": "Shallow Hal",
       "date": "1.15.2021",
       "location": "Houston Arboretum",
       "category": "Preserving the Environment"
     },
     {
       "id": 3,
-      "title": "M0106b",
+      "title": "Small Meeting",
       "description": "A smallish meeting for those with large hearts and even larger checkbooks",
       "createdBy": "Shallow Hal",
       "date": "2.12.2021",
@@ -29,7 +29,7 @@
     },
     {
       "id": 4,
-      "title": "M0106c",
+      "title": "Dinner & Dance",
       "description": "Dinner and Dance",
       "createdBy": "Hosey Hoserson",
       "date": "3.14.2021",
@@ -38,12 +38,12 @@
     },
     {
       "id": 5,
-      "title": "M0106d",
+      "title": "Celebrity Poker",
       "description": "Celebrity Poker Tournament",
       "createdBy": "Shallow Hal",
       "date": "3.26.2021",
       "location": "Aria Casino",
-      "category": "Helping the Homeless"
+      "category": "Feeding the Hungry"
     },
     {
       "title": "M1530",

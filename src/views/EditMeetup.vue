@@ -23,7 +23,7 @@ export default {
 
     methods: {
       updateMeetup(meetup) {
-        this.$store.dispatch('edit_meetup', meetup)
+        this.$store.dispatch('update_meetup', meetup)
           .then( () => this.$router.push({name: 'MeetupList'}))
           .catch( error => console.log('error', error))
       }

@@ -33,6 +33,11 @@ export default createStore({
 
     ADD_MEETUP(state, meetup) {
       state.meetups.push(meetup)
+    },
+
+    UPDATE_MEETUP(state, meetup) {
+      let foundIndex = state.meetups.findIndex( aMeetup => aMeetup.id == meetup.id)
+      state.meetups[foundIndex] = meetup
     }
   },
 
@@ -58,8 +63,10 @@ export default createStore({
         })
     },
 
-    update_meetup({ commit}, meetup) {
-      // TODO: complete method body
+    update_meetup({ commit }, meetup) {
+      API.updateMeetup(meetup)
+        .then( () => commit('UPDATE_MEETUP', meetup))
+        .catch( error => console.log('error', error))
     }
   },
   

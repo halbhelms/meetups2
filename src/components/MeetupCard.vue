@@ -2,7 +2,7 @@
   <div class="card">
       <div>
         <h2 class="card-title"><span>{{ meetup.title }}</span><span><router-link :to="{name: 'EditMeetup', params: {id: meetup.id}}">Edit</router-link></span><span @click="deleteMeetup">Delete</span></h2>
-        <p>Created by: {{ meetup.createdBy }}</p>
+        <p class="text-purple-200">Created by: {{ meetup.createdBy }}</p>
       </div>
 
       <div>

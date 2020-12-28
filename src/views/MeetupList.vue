@@ -1,5 +1,5 @@
 <template>
-    <h1 class="view">Meetups</h1>
+    <h1 class="view font-sans">Meetups</h1>
     <MeetupCard v-for="meetup in $store.state.meetups" :meetup="meetup" :key="meetup.id" />
 </template>
 

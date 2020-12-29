@@ -7,14 +7,14 @@
       "createdBy": "Hosey Hoserson",
       "date": "12.26.2020",
       "location": "Bellagio Hotel & Casino",
-      "category": "Saving Animals"
+      "category": "Feeding the Hungry"
     },
     {
       "id": 2,
       "title": "Large Gala",
       "description": "The largest gala of its type in the Western world",
-      "createdBy": "Shallow Hal",
-      "date": "1.15.2021",
+      "createdBy": "Johnny B. Good",
+      "date": "1.16.2021",
       "location": "Houston Arboretum",
       "category": "Preserving the Environment"
     },
@@ -28,15 +28,6 @@
       "category": "Feeding the Hungry"
     },
     {
-      "id": 4,
-      "title": "Dinner & Dance",
-      "description": "Dinner and Dance",
-      "createdBy": "Hosey Hoserson",
-      "date": "3.14.2021",
-      "location": "Hoserson Mansion",
-      "category": "Saving Animals"
-    },
-    {
       "id": 5,
       "title": "Celebrity Poker",
       "description": "Celebrity Poker Tournament",
@@ -46,22 +37,22 @@
       "category": "Feeding the Hungry"
     },
     {
-      "title": "M1530",
-      "description": "One of the most anticipated meetups of the year",
-      "createdBy": "Demo Sthenes",
-      "location": "Rockefeller Center",
-      "date": "4.12.2021",
-      "category": "Helping the Homeless",
-      "id": 6
+      "title": "Rachel Maddow Appreciation Day",
+      "description": "In honor of this event, all participants are asked to hector random individuals who don't share their opinion.",
+      "createdBy": "Johnny B. Good",
+      "location": "Everywhere",
+      "date": "3.14.2021",
+      "category": "Feeding the Hungry",
+      "id": 8
     },
     {
-      "title": "M1534",
-      "description": "One of the most anticipated meetups of the year",
-      "createdBy": "Demo Sthenes",
-      "location": "Rockefeller Center",
-      "date": "4.21.2021",
+      "title": "adfa",
+      "description": "adfadf",
+      "createdBy": "Johnny B. Good",
+      "location": "ada",
+      "date": "adfad",
       "category": "Helping the Homeless",
-      "id": 7
+      "id": 9
     }
   ]
 }

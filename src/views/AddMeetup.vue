@@ -1,6 +1,8 @@
 <template>
   <div class="view">
-      <h2>Add a Meetup</h2>
+      <div class="flex items-center justify-center">
+        <h1 class="view mb-4">Add Meetup</h1>
+      </div>
       <MeetupForm @submitted-meetup-form="addMeetup" />
   </div>
 </template>

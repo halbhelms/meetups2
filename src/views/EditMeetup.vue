@@ -1,6 +1,8 @@
 <template>
   <div class="view">
-      <h2>Edit a Meetup</h2>
+      <div class="flex items-center justify-center">
+        <h1 class="view mb-4">Edit Meetup</h1>
+      </div>
       <MeetupForm :_meetup="meetup" @submitted-meetup-form="updateMeetup" />
   </div>
 </template>

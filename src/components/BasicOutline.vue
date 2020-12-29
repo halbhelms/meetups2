@@ -29,21 +29,6 @@
           <img class="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow">
           <img class="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg" alt="Workflow">
         </div>
-        <div class="hidden md:ml-6 md:flex md:space-x-8">
-          <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-          <a href="#" class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-            Dashboard
-          </a>
-          <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-            Team
-          </a>
-          <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-            Projects
-          </a>
-          <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-            Calendar
-          </a>
-        </div>
       </div>
       <div class="flex items-center">
         <div class="flex-shrink-0">
@@ -52,7 +37,10 @@
             <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
             </svg>
-            <span>New Job</span>
+            <!-- add meetup button -->
+            <router-link :to="{name: 'AddMeetup'}">
+              <span>Add Meetup</span>
+            </router-link>
           </button>
         </div>
         <div class="hidden md:ml-4 md:flex-shrink-0 md:flex md:items-center">
@@ -138,13 +126,21 @@ export default {
 
     data() {
         return {
-            accountOpen: false
+            accountOpen: false,
+            
+            tabActive: "border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium",
+            
+            tabInactive: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
         }
     },
 
     methods: {
         toggleAccountOpen() {
             this.accountOpen = !this.accountOpen
+        },
+
+        setActiveTab(event) {
+          console.log('event.target', event.target)
         }
     }
 }

@@ -1,5 +1,6 @@
 import { createStore } from 'vuex'
 import API from '../services/APIService'
+import router from 'vue-router'
 
 export default createStore({
   state: {
@@ -38,6 +39,12 @@ export default createStore({
     UPDATE_MEETUP(state, meetup) {
       let foundIndex = state.meetups.findIndex( aMeetup => aMeetup.id == meetup.id)
       state.meetups[foundIndex] = meetup
+    },
+
+    DELETE_MEETUP(state, meetupId) {
+      state.meetups = state.meetups.filter( meetup => {
+        meetup.id !== meetupId
+      })
     }
   },
 
@@ -66,6 +73,12 @@ export default createStore({
     update_meetup({ commit }, meetup) {
       API.updateMeetup(meetup)
         .then( () => commit('UPDATE_MEETUP', meetup))
+        .catch( error => console.log('error', error))
+    },
+
+    remove_meetup({ commit}, meetupId) {
+      return API.deleteMeetup(meetupId)
+        .then( () => commit('DELETE_MEETUP', meetupId))
         .catch( error => console.log('error', error))
     }
   },

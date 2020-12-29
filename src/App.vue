@@ -1,12 +1,10 @@
 <template>
-  <div id="nav" class="text-center h-10 align-baseline outline-black pt-4">
-    <router-link :to="{name: 'MeetupList'}" class="text-sm px-2  border-2 border-transparent rounded-md mr-4 hover:bg-purple-400 hover:text-white hover:border-purple-800">All Meetups</router-link>
-    |
-    <router-link :to="{name: 'AddMeetup'}" class="text-sm ml-4 hover:bg-purple-400 hover:text-white hover:border-double hover:p-2">Add Meetup</router-link>
-    
-  </div>
+<main class="w-screen">
   <BasicOutline />
-  <router-view/>
+  <div class="container mx-auto">
+    <router-view/>
+  </div>
+</main>
 </template>
 
 <script>
@@ -30,6 +28,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
+}
+
+h1{
+  font-family: 'Fredericka the Great', sans-serif;
+  font-size: 2rem;
 }
 
 /* #nav {

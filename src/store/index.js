@@ -65,8 +65,8 @@ export default createStore({
 
     add_meetup({ commit }, meetup) {
       return API.addMeetup(meetup)
-        .then( () => {
-          commit('ADD_MEETUP', meetup)
+        .then( (response) => {
+          commit('ADD_MEETUP', response.data)
         })
     },
 
@@ -76,7 +76,7 @@ export default createStore({
         .catch( error => console.log('error', error))
     },
 
-    remove_meetup({ commit}, meetupId) {
+    remove_meetup({ commit }, meetupId) {
       return API.deleteMeetup(meetupId)
         .then( () => commit('DELETE_MEETUP', meetupId))
         .catch( error => console.log('error', error))

@@ -55,13 +55,13 @@
       "id": 9
     },
     {
-      "title": "Hal B",
-      "description": "He's coming back",
-      "createdBy": "Johnny B. Good",
-      "location": "ada",
-      "date": "ad",
+      "title": "Wes' Birthday Party",
+      "description": "Wes' 50th Birthday Party",
+      "createdBy": "Hosey Hoserson",
+      "location": "Vegas, Baby",
+      "date": "1.11.2021",
       "category": "Helping the Homeless",
-      "id": 10
+      "id": 11
     }
   ]
 }

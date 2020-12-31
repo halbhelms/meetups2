@@ -3,7 +3,7 @@
         <!-- title -->
         <div class="grid mb-3 ">
             <div class="grid grid-cols-12">
-                <label class="col-span-3 text-right pr-3 font-bold font-bold">
+                <label class="col-span-3 text-right pr-3 font-bold">
                     Title  
                 </label>
                 <input class="col-span-8 col-start-4  border-2 border-gray-200 rounded-md pl-2 focus:border-purple-500 focus:bg-purple-100" type="text" v-model="meetup.title" />
@@ -12,7 +12,7 @@
         <!-- description -->
         <div class="grid mb-3">
             <div class="grid grid-cols-12">
-                <label class="col-span-3 text-right pr-3 font-bold font-bold">
+                <label class="col-span-3 text-right pr-3 font-bold">
                     Description  
                 </label>
                     <textarea class="col-span-8 col-start-4  border-2 border-gray-200 rounded-md pl-2 focus:border-purple-500 focus:bg-purple-100" type="text" v-model="meetup.description"></textarea>
@@ -21,7 +21,7 @@
         <!-- createdBy -->
         <div class="grid mb-3">
             <div class="grid grid-cols-12 ">
-                <label class=" col-span-3 text-right pr-3 font-bold font-bold">
+                <label class=" col-span-3 text-right pr-3 font-bold">
                     Who created this meetup?  
                 </label>
                 <select class="col-span-4 col-start-4 border-2 border-gray-200 rounded-md pl-2 focus:border-purple-500 focus:bg-purple-100" v-model="meetup.createdBy">
@@ -33,7 +33,7 @@
         <!-- location -->
         <div class="grid mb-3 ">
             <div class="grid grid-cols-12">
-                <label class="col-span-3 text-right pr-3 font-bold font-bold">
+                <label class="col-span-3 text-right pr-3 font-bold">
                     Location  
                 </label>
                 <input class="col-span-8 col-start-4  border-2 border-gray-200 rounded-md pl-2 focus:border-purple-500 focus:bg-purple-100" type="text" v-model="meetup.location" />
@@ -42,7 +42,7 @@
         <!-- date -->
         <div class="grid mb-3 ">
             <div class="grid grid-cols-12">
-                <label class="col-span-3 text-right pr-3 font-bold font-bold">
+                <label class="col-span-3 text-right pr-3 font-bold">
                     Date  
                 </label>
                 <input class="col-span-8 col-start-4  border-2 border-gray-200 rounded-md pl-2 focus:border-purple-500 focus:bg-purple-100" type="text" v-model="meetup.date" />
@@ -51,7 +51,7 @@
         <!-- category -->
         <div class="grid">
             <div class="grid grid-cols-12 ">
-                <label class=" col-span-3 text-right pr-3 font-bold font-bold">
+                <label class=" col-span-3 text-right pr-3 font-bold">
                     Category  
                 </label>
                 <select class="col-span-4 col-start-4 border-2 border-gray-200 rounded-md pl-2 focus:border-purple-500 focus:bg-purple-100" v-model="meetup.category">
